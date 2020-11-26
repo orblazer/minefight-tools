@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+@import '~bulma/sass/utilities/initial-variables';
+
+// Replace derived variables
+$primary: $green;
+
+// Replace variables
+$navbar-item-active-background-color: transparentize($black, 0.9);
+$navbar-item-hover-background-color: transparentize($black, 0.8);
+
+@import '~bulma/bulma.sass';
+@import './accordion.scss';
+
+#gatsby-focus-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  & > .container {
+    width: 100%;
+  }
+}
+
+.columns.is-around {
+  justify-content: space-around;
+}
+
+.columns.is-right {
+  justify-content: flex-end;
+}
+
+@include touch {
+  main.container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+.notification strong {
+  color: currentColor !important;
+}
+
+.is-vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  .navbar-dropdown a.navbar-item.is-active {
+    color: $scheme-invert !important;
+  }
+
+  .is-active {
+    background-color: $navbar-item-active-background-color !important;
+
+    &:hover,
+    &:focus {
+      background-color: $navbar-item-hover-background-color !important;
+    }
+  }
+}
+
+.checkbox input,
+.radio input {
+  margin-right: 0.25rem;
+}

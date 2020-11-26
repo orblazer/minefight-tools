@@ -1,0 +1,216 @@
+{
+  "spawn-type": {
+    "normal": "Normal",
+    "water": "Eau",
+    "flying": "Aérien",
+    "boss": "Boss"
+  },
+  "spell": {
+    "type": {
+      "area_effect": "Nuage d'effet",
+      "arrow": "Flèche",
+      "bomb": "Bombe (TNT)",
+      "fireball": "Boule de feu",
+      "lightning": "Foudre",
+      "teleport": "Téléportation",
+      "throw": "Ejection en l'air",
+      "enderman": "Enderman (téléportation aléatoire)",
+      "disarm": "Désarmement",
+      "minions": "Invocation",
+      "fangs": "Mâchoires"
+    },
+    "condition": {
+      "minHealth": "Vie minimum",
+      "maxHealth": "Vie maximum",
+      "minNearbyPlayer": "Minimum de joueur proche",
+      "maxNearbyPlayer": "Maximum de joueur proche"
+    }
+  },
+  "spells": {
+    "title": "Sorts",
+    "block-title": "Sort : <strong>{{type}}<strong>",
+    "add": "Ajoutez un sort"
+  },
+  "monster-generator": {
+    "title": "Générateur de monstre",
+    "fields": {
+      "_common": {
+        "type": "Type",
+        "color": "Couleur",
+        "variant": "Variante",
+        "size": "Taille",
+        "profession": "Profession"
+      },
+      "code": "Code",
+      "internal-name": "Nom interne",
+      "type": "Type",
+      "spawn-type": "Type de spawn",
+      "name": "Nom",
+      "name-help": "Vous pouvez utilisez un <1>générateur de texte JSON</1>, concernant les couleurs utiliser <code>§</code",
+      "vehicle": "Véhicule",
+      "vehicle-help": "Nom interne du monstre chevauché (le monstre doit exister, ex. <code>bob</code>)",
+      "bossBar": "Barre de boss ?",
+      "gravity": "Sensible à la gravité ?",
+      "silent": "Silencieux ?",
+      "glowing": "Brillant ?",
+      "settings": {
+        "_ageable": {
+          "baby": "Enfant ?"
+        },
+        "_tameable": {
+          "tamed": "Apprivoisé ?"
+        },
+        "bee": {
+          "anger": "En colère ?",
+          "nectar": "Pollen ?",
+          "stung": "Dart ?"
+        },
+        "cat": {
+          "type": "$t(monster-generator.fields._common.type)",
+          "collar-color": "Couleur du collier"
+        },
+        "creeper": {
+          "powered": "Chargé ?",
+          "ignited": "Allumé ?",
+          "fuse-ticks": "Délai d'explosion (en tick)",
+          "radius": "Rayon d'explosion"
+        },
+        "fox": {
+          "type": "$t(monster-generator.fields._common.type)"
+        },
+        "horse": {
+          "saddle": "Scelle ?",
+          "chest": "Coffre ?",
+          "color": "$t(monster-generator.fields._common.color)",
+          "style": "Style"
+        },
+        "llama": {
+          "color": "$t(monster-generator.fields._common.color)",
+          "decor": "Décor"
+        },
+        "slime": {
+          "size": "$t(monster-generator.fields._common.size)"
+        },
+        "mooshroom": {
+          "variant": "$t(monster-generator.fields._common.variant)"
+        },
+        "panda": {
+          "gene": "Gène",
+          "hidden-gene": "Gène caché"
+        },
+        "parrot": {
+          "variant": "$t(monster-generator.fields._common.variant)"
+        },
+        "phantom": {
+          "size": "$t(monster-generator.fields._common.size)"
+        },
+        "pufferfish": {
+          "puff-state": {
+            "label": "Gonflement",
+            "state": ["Dégonflé", "A moitié gonflé", "Gonflé"]
+          }
+        },
+        "rabbit": {
+          "type": "$t(monster-generator.fields._common.type)"
+        },
+        "sheep": {
+          "sheared": "Tondu ?",
+          "color": "$t(monster-generator.fields._common.color)"
+        },
+        "shulker": {
+          "color": "$t(monster-generator.fields._common.color)"
+        },
+        "snow_golem": {
+          "derped": "Citrouille sur la tête ?"
+        },
+        "tropical_fish": {
+          "pattern": "Motif",
+          "pattern-color": "Couleur du motif",
+          "body-color": "Couleur du corps"
+        },
+        "turtle": {
+          "egg": "Porte un œuf ?"
+        },
+        "vex": {
+          "charging": "En charge ?"
+        },
+        "villager": {
+          "type": "$t(monster-generator.fields._common.type)",
+          "profession": "$t(monster-generator.fields._common.profession)"
+        },
+        "wolf": {
+          "anger": "En colère ?",
+          "collar-color": "Couleur du collier"
+        }
+      },
+      "spell-condition": {
+        "type": "Condition",
+        "value": "Valeur",
+        "radius": "Rayon"
+      },
+      "spell": {
+        "spell": "Sort",
+        "chance": "Chance",
+        "cast-duration": "Durée d'incantation",
+        "cooldown": "Temps de recharge",
+        "conditions": {
+          "title": "Conditions",
+          "block-title": "Condition : <strong>{{type}}</strong>",
+          "add": "Ajoutez une condition"
+        },
+        "area-effect": {
+          "duration": "Durée de vie",
+          "wait-time": "Temps avant application de l'éffet",
+          "reapplication-delay": "Temps d'immunité entre 2 effets",
+          "duration-on-use": "Diminution de la durée a chaque utilisation",
+          "radius": "Rayon",
+          "radius-on-use": "Diminution du rayon a chaque utilisation",
+          "radius-per-tick": "Diminution du rayon a chaque tick",
+          "particle": "Particule",
+          "color": "Couleur"
+        },
+        "arrow": {
+          "speed": "Vitesse",
+          "spread": "Propagation",
+          "color": "Couleur"
+        },
+        "bomb": {
+          "delay": "Délai",
+          "yield": "Force",
+          "incendiary": "Incendiaire ?",
+          "fire-ticks": "Temps du feu"
+        },
+        "fireball": {
+          "yield": "Force",
+          "small": "Petite ?",
+          "incendiary": "Incendiaire ?",
+          "fire-ticks": "Temps du feu"
+        },
+        "teleport": {
+          "radius": "Rayon"
+        },
+        "throw": {
+          "duration": "Durée",
+          "amplifier": "Amplification"
+        },
+        "minion": {
+          "invulnerable": "Invulnérable ?",
+          "monsters": {
+            "title": "Monstres",
+            "block-title": "Monstre : <strong>{{type}}</strong>",
+            "add": "Ajoutez un monstre",
+            "type": "Type",
+            "chance": "Chance d'apparition",
+            "min-amount": "Quantité minimum",
+            "max-amount": "Quantité maximum"
+          }
+        }
+      }
+    },
+    "load": "Charger",
+    "new": "Nouveau",
+    "generate": "Générer",
+    "reset": "Réinitialiser",
+    "export": "Exporter"
+  }
+}

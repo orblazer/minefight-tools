@@ -1,0 +1,261 @@
+{
+  "tick-help": "Durée en tick. <code>20</code> tick équivaut à 1 seconde",
+  "attribute": {
+    "help": {
+      "generic_attack_damage": "Valeur en demi-cœurs",
+      "generic_follow_range": "Valeur en blocs",
+      "generic_lick": "Appliquer sur les tables de butin",
+      "generic_max_health": "Valeur en demi-cœurs",
+      "horse_jump_strength": "Seulement sur les chevaux",
+      "zombie_spawn_reinforcements": "Probabilité de spawn un autre zombie à l'attaque, seulement sur les zombie"
+    },
+    "operation": {
+      "add_number": "+/- Quantité",
+      "add_scalar": "+/- Quantité % (additif)",
+      "multiply_scalar_1": "+/- Quantité % (multiplicatif)"
+    }
+  },
+  "entity": {
+    "cat": {
+      "type": {
+        "tabby": "Tigré brun",
+        "black": "Bicolore (noir et blanc)",
+        "red": "Tigré roux",
+        "siamese": "Siamois (gris et blanc)",
+        "british_shorthair": "British Shorthair (gris)",
+        "calico": "Calico (tricolore)",
+        "persian": "Persan (beige)",
+        "ragdoll": "Ragdoll (gris)",
+        "white": "Angora (blanc)",
+        "jellie": "Jellie (gris et blanc)",
+        "all_black": "Panthère (noir)"
+      }
+    },
+    "fox": {
+      "type": {
+        "red": "Roux",
+        "white": "Blanc"
+      }
+    },
+    "horse": {
+      "color": {
+        "white": "Blanc",
+        "creamy": "Crème",
+        "chestnut": "Châtain",
+        "brown": "Marron",
+        "black": "Noir",
+        "gray": "Gris",
+        "dark_brown": "Marron foncé"
+      },
+      "style": {
+        "none": "Aucun",
+        "white": "Pattes blanches",
+        "whitefield": "Tâches blanches",
+        "white_dots": "Points blancs",
+        "black_dots": "Dos sombre"
+      }
+    },
+    "llama": {
+      "color": {
+        "creamy": "Crème",
+        "white": "Blanc",
+        "brown": "Brun",
+        "gray": "Gris"
+      }
+    },
+    "mooshroom": {
+      "variant": {
+        "red": "Rouge",
+        "brown": "Brune"
+      }
+    },
+    "panda": {
+      "gene": {
+        "normal": "Normal",
+        "lazy": "Paresseux",
+        "worried": "Inquiet",
+        "playful": "Joueur",
+        "brown": "Brun",
+        "weak": "Faible",
+        "aggressive": "Agressif"
+      }
+    },
+    "parrot": {
+      "variant": {
+        "red": "Rouge",
+        "blue": "Bleu foncé",
+        "green": "Vert clair",
+        "cyan": "Bleu clair",
+        "gray": "Gris clair"
+      }
+    },
+    "rabbit": {
+      "type": {
+        "brown": "Brun",
+        "white": "Blanc",
+        "black": "Noir",
+        "black_and_white": "Noir et blanc",
+        "gold": "Or (crème)",
+        "salt_and_pepper": "Poivre et sel",
+        "the_killer_bunny": "Lapin tueur"
+      }
+    },
+    "villager": {
+      "type": {
+        "desert": "Desert",
+        "jungle": "Jungle",
+        "plains": "Plaines",
+        "savanna": "Savane",
+        "snow": "Neige",
+        "swamp": "Marais",
+        "taiga": "Taïga"
+      }
+    }
+  },
+  "equipment-slot": {
+    "hand": "Main principal",
+    "off_hand": "Main secondaire",
+    "feet": "Pied",
+    "legs": "Jambe",
+    "chest": "Torse",
+    "head": "Tête"
+  },
+  "item-flag": {
+    "hide_enchants": "Enchantements cacher",
+    "hide_attributes": "Attributs cacher",
+    "hide_unbreakable": "Cacher l'état 'incassable'",
+    "hide_potion_effects": "Cacher les effets de potion",
+    "hide_dye": "Cacher la couleur"
+  },
+  "effects": {
+    "title": "Effets de potions",
+    "block-title": "Effet : <strong>{{type}} {{amplifier}}{{duration}}</strong>",
+    "add": "Ajouter un effet"
+  },
+  "attributes": {
+    "title": "Attributs",
+    "block-title": "Attribut : <strong>{{type}}</strong>",
+    "add": "Ajouter un attribut"
+  },
+  "enchantments": {
+    "title": "Enchantements",
+    "block-title": "Enchantment : <strong>{{type}} {{level}}</strong>",
+    "add": "Ajouter un enchantement"
+  },
+  "equipments": {
+    "title": "Equipments",
+    "block-title": "Équipement : <strong>{{type}}</strong>",
+    "add": "Ajouter un équipment"
+  },
+  "particle": {
+    "ambient_entity_effect": "Effet ambiant (balise)",
+    "angry_villager": "Villageois en colère",
+    "ash": "Cendre",
+    "barrier": "Barrière invisible",
+    "block": "Bloc",
+    "bubble": "Bulle d'eau",
+    "bubble_column_up": "Colonne de bulle montante",
+    "bubble_pop": "Explosion bulle d'eau",
+    "campfire_cosy_smoke": "Fumée de feu de camp (cosy)",
+    "campfire_signal_smoke": "Fumée de feu de camp (signal)",
+    "cloud": "Nuage",
+    "composter": "Composteur",
+    "crimson_spore": "Spore cramin",
+    "crit": "Critique",
+    "current_down": "Colonne de bulle descendante",
+    "damage_indicator": "Indicateur de dégâts (coeur)",
+    "dolphin": "Trainée du dauphin",
+    "dragon_breath": "Souffle du dragon",
+    "dripping_honey": "Goutte de miel",
+    "dripping_lava": "Goutte de lave",
+    "dripping_obsidian_tear": "Goutte d'obsidienne pleureuse",
+    "dripping_water": "Goutte d'eau",
+    "dust": "Poussière (redstone)",
+    "effect": "Potion",
+    "elder_guardian": "Apparence du grand gardien",
+    "enchant": "Enchantement",
+    "enchanted_hit": "Critique magique",
+    "end_rod": "Barre de l'end / Tir de Shulker",
+    "entity_effect": "Potion sur entité",
+    "explosion": "Explosion large",
+    "explosion_emitter": "Emission d'explosion (TNT)",
+    "falling_dust": "Poussière de bloc en lévitation",
+    "falling_honey": "Goutte de miel (tombante)",
+    "falling_lava": "Goutte de lave (tombante)",
+    "falling_nectar": "Nectar tombant",
+    "falling_obsidian_tear": "Goutte d'obsidienne pleureuse (tombante)",
+    "falling_water": "Goutte d'eau (tombante)",
+    "firework": "Trainée deu d'artifice",
+    "fishing": "Poisson (pèche)",
+    "flame": "Flamme",
+    "flash": "Éclaire de feu d'artifice",
+    "happy_villager": "Villageois contant",
+    "heart": "Coeur",
+    "instant_effect": "Potion instantané",
+    "item": "Item",
+    "item_slime": "Saut de slime",
+    "item_snowball": "Boule de neige",
+    "landing_honey": "Goutte de miel (au sol)",
+    "landing_lava": "Goutte de lave (au sol)",
+    "landing_obsidian_tear": "Goutte d'obsidienne pleureuse (au sol)",
+    "large_smoke": "Fumée large",
+    "lava": "Lave",
+    "mycelium": "Mycélium",
+    "nautilus": "Nautilus",
+    "poof": "Mort de mob",
+    "note": "Note de musique",
+    "portal": "Portail (tombante)",
+    "rain": "Pluie",
+    "smoke": "Fumée",
+    "sneeze": "Éternuement (panda)",
+    "soul": "Âmes",
+    "soul_fire_flame": "Flame des âmes (bleu)",
+    "spit": "Crachat",
+    "splash": "Éclaboussure",
+    "squid_ink": "Encre de poulpe",
+    "sweep_attack": "Attaque par balayage",
+    "totem_of_undying": "Totem",
+    "underwater": "Sous l'eau",
+    "warped_spore": "Spore biscornu",
+    "white_ash": "Poussière blanche",
+    "witch": "Sorcière",
+    "reverse_portal": "Portail (statique)"
+  },
+  "fields": {
+    "effect": {
+      "type": "Type",
+      "duration": "Durée",
+      "amplifier": "Amplificateur",
+      "ambient": "Ambiant ?",
+      "particles": "Particules ?",
+      "icon": "Icône ?"
+    },
+    "attribute": {
+      "type": "Type",
+      "value": "Valeur",
+      "uuid": "UUID (Universal Unique ID)",
+      "name": "Nom",
+      "operation": "Opération",
+      "slot": "Slot",
+      "empty-slot": "Tous les slot"
+    },
+    "enchantment": {
+      "type": "Type",
+      "level": "Niveau"
+    },
+    "item": {
+      "search": "Cherchez un item...",
+      "material": "Matériel",
+      "color": "Couleur",
+      "amount": "Quantité",
+      "damage": "Dégâts",
+      "damage_help": "Définir la valeur sur <code>-1</code> pour une durabilité infini. Toute autre valeur négative ajoute de la durabilité à l'item",
+      "flags": "Drapeaux"
+    },
+    "equipment": {
+      "drop-chance": "Chance de drop (en %)",
+      "min-amount": "Quantité minimum",
+      "max-amount": "Quantité maximum"
+    }
+  }
+}

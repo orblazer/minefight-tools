@@ -1,0 +1,93 @@
+$accordion-radius: $radius-large !default;
+$accordion-shadow: 0 0.5em 1em -0.125em rgba($scheme-invert, 0.1), 0 0px 0 1px rgba($scheme-invert, 0.02) !default;
+
+$accordion-button-padding: 1.25rem !default;
+$accordion-button-background-color: $scheme-main-bis !default;
+$accordion-button-color: $text !default;
+$accordion-button-border-bottom-color: $border !default;
+$accordion-button-border-bottom-style: solid !default;
+$accordion-button-border-bottom-width: 1px !default;
+$accordion-button-hover-background-color: $scheme-main-ter !default;
+$accordion-button-hover-color: $text-strong !default;
+
+$accordion-content-padding: 1.25rem !default;
+$accordion-content-background-color: $scheme-main !default;
+$accordion-content-color: $text !default;
+
+$accordion-link-hover-shadow: 0 0.5em 1em -0.125em rgba($scheme-invert, 0.1), 0 0 0 1px $link !default;
+$accordion-link-active-shadow: inset 0 1px 2px rgba($scheme-invert, 0.2), 0 0 0 1px $link !default;
+
+.accordion__section {
+  display: flex;
+  flex-direction: column;
+
+  border-radius: $accordion-radius;
+  box-shadow: $accordion-shadow;
+
+  &:not(:last-of-type) {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+
+    border-bottom-color: $accordion-button-border-bottom-color;
+    border-bottom-style: $accordion-button-border-bottom-style;
+    border-bottom-width: $accordion-button-border-bottom-width;
+  }
+  &:not(:first-of-type) {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  &:last-of-type {
+    margin-bottom: $block-spacing;
+  }
+}
+
+.accordion {
+  @include unselectable;
+  border: none;
+  outline: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  background-color: $accordion-button-background-color;
+  color: $accordion-button-color;
+  padding: $accordion-button-padding;
+  border-bottom-color: $accordion-button-border-bottom-color;
+  border-bottom-style: $accordion-button-border-bottom-style;
+  border-bottom-width: $accordion-button-border-bottom-width;
+  cursor: pointer;
+
+  &:hover,
+  &:focus,
+  .accordion--open & {
+    background-color: $accordion-button-hover-background-color;
+    color: $accordion-button-hover-color;
+  }
+}
+
+.accordion__title {
+  flex: 1;
+  text-align: left;
+  padding: 0 0.75rem;
+}
+
+.accordion__actions {
+  display: flex;
+  align-items: center;
+  & > *:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+}
+
+.accordion__content {
+  display: none;
+
+  background-color: $accordion-content-background-color;
+  color: $accordion-content-color;
+  padding: $accordion-content-padding;
+}
+
+.accordion--open > .accordion__content {
+  display: block;
+}

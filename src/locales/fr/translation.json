@@ -1,0 +1,23 @@
+{
+  "navbar": {
+    "home": "Accueil",
+    "website": "Retour au site",
+    "invasion": {
+      "title": "Invasion",
+      "monster-generator": "Générateur de monstre"
+    }
+  },
+  "pages": {
+    "not-found": {
+      "title": "Page introuvable",
+      "message": "Oops... Nous n'avons rien trouvez ici.",
+      "back": "Retour au site"
+    },
+    "invasion": {
+      "title": "Invasion"
+    }
+  },
+  "close": "Fermer",
+  "delete": "Supprimer",
+  "tools": "Liste d'outils"
+}
