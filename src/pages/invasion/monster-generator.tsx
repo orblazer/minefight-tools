@@ -345,6 +345,7 @@ const MonsterGeneratorPage: React.FC = () => {
   const [step, setStep] = useState(0)
   const [defaultValues, setDefaultValues] = useState<Partial<FormData>>({})
   const [code, setCode] = useState('')
+  const [file, setFile] = useState<{ filename: string; content: string } | null>(null)
 
   function onLoadCode(code: Partial<FormData> | null) {
     setDefaultValues(code || {})
@@ -356,6 +357,14 @@ const MonsterGeneratorPage: React.FC = () => {
       data.equipments = data.equipments.filter((equipment) => equipment.item.material !== '')
     }
     setCode(btoa(JSON.stringify(data)))
+
+    // Create file
+    const { internalName, ...content } = data
+    const filename = internalName + '.json'
+    setFile({
+      filename,
+      content: JSON.stringify(content, null, 2)
+    })
   }
 
   return (
@@ -374,6 +383,7 @@ const MonsterGeneratorPage: React.FC = () => {
               setStep(0)
               setDefaultValues({})
               setCode('')
+              setFile(null)
             }}
           />
         )}
@@ -386,6 +396,20 @@ const MonsterGeneratorPage: React.FC = () => {
             <div className="control is-expanded">
               <textarea id="code" rows={3} className="textarea" value={code} readOnly />
             </div>
+          </div>
+        )}
+        {file !== null && (
+          <div className="control">
+            <button
+              className="button"
+              onClick={(e) => {
+                e.preventDefault()
+                downloadText(file.content || '', file.filename || 'undefined.json')
+              }}
+              disabled={file === null}
+            >
+              {t('monster-generator.export')}
+            </button>
           </div>
         )}
       </div>
