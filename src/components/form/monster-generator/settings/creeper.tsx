@@ -1,8 +1,9 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import FormField from '@/components/form/form-field'
-import { min } from '@/components/form/form-rules'
+import { min, integer } from '@/components/form/form-rules'
 import { SettingFC } from '..'
+import getOrDefault from '@/utils/getOrDefault'
 
 const PREFIX = 'monster-generator.fields.settings.creeper'
 
@@ -38,24 +39,31 @@ export const Fields: SettingFC = ({ control }) => {
         control={control}
         type="number"
         name="settings.fuseTicks"
-        value={30}
+        defaultValue={getOrDefault(control?.getValues('settings.fuseTicks') as number, 30)}
         min={0}
         step={1}
         label={t(PREFIX + '.fuse-ticks')}
+        help={t('tick-help', { ns: 'minecraft' })}
         rules={{
-          min: min(0)
+          min: min(0),
+          validate: {
+            integer
+          }
         }}
       />
       <FormField
         control={control}
         type="number"
         name="settings.radius"
-        value={3}
+        defaultValue={getOrDefault(control?.getValues('settings.radius') as number, 3)}
         min={0}
         step={1}
         label={t(PREFIX + '.radius')}
         rules={{
-          min: min(0)
+          min: min(0),
+          validate: {
+            integer
+          }
         }}
       />
     </>

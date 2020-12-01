@@ -4,6 +4,7 @@ import MinecraftSelect from '@/components/form/minecraft/minecraft-select'
 import { SettingFC } from '..'
 import FormField from '../../form-field'
 import { min, max, integer } from '../../form-rules'
+import getOrDefault from '@/utils/getOrDefault'
 
 const PREFIX = 'monster-generator.fields.settings.llama'
 
@@ -19,7 +20,7 @@ export const Fields: SettingFC = ({ control }) => {
         min={1}
         max={5}
         step={1}
-        value={3}
+        defaultValue={getOrDefault(control?.getValues('settings.strength') as number, 3)}
         label={t(PREFIX + '.strength')}
         rules={{
           min: min(1),

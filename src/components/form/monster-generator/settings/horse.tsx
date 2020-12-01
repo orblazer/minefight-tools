@@ -22,7 +22,6 @@ export const Fields: SettingFC = ({ control }) => {
         name="settings.style"
         label={t(PREFIX + '.style')}
       />
-      {/* Horse armor */}
     </>
   )
 }

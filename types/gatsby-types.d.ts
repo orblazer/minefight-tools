@@ -2825,14 +2825,14 @@ type EquipmentMinecraftItemStackSizeQueryVariables = Exact<{ [key: string]: neve
 
 type EquipmentMinecraftItemStackSizeQuery = { readonly allMinecraftItem: { readonly nodes: ReadonlyArray<Pick<MinecraftItem, 'name' | 'stackSize'>> } };
 
-type SiteMetadataQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-type SiteMetadataQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<Pick<SiteSiteMetadata, 'siteUrl' | 'websiteUrl' | 'defaultLanguage' | 'title' | 'titleTemplate' | 'description'>> }> };
-
 type allTranslationQueryVariables = Exact<{ [key: string]: never; }>;
 
 
 type allTranslationQuery = { readonly allTranslation: { readonly nodes: ReadonlyArray<Pick<Translation, 'lang' | 'namespace' | 'content'>> } };
+
+type SiteMetadataQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type SiteMetadataQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<Pick<SiteSiteMetadata, 'siteUrl' | 'websiteUrl' | 'defaultLanguage' | 'title' | 'titleTemplate' | 'description'>> }> };
 
 }

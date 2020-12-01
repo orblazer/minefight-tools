@@ -72,7 +72,7 @@
         "creeper": {
           "powered": "Chargé ?",
           "ignited": "Allumé ?",
-          "fuse-ticks": "Délai d'explosion (en tick)",
+          "fuse-ticks": "Délai d'explosion",
           "radius": "Rayon d'explosion"
         },
         "fox": {
