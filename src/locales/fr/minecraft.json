@@ -34,7 +34,7 @@
     "fox": {
       "type": {
         "red": "Roux",
-        "white": "Blanc"
+        "snow": "Neige"
       }
     },
     "horse": {
@@ -253,7 +253,7 @@
       "flags": "Drapeaux"
     },
     "equipment": {
-      "drop-chance": "Chance de drop (en %)",
+      "drop-chance": "Chance de drop",
       "min-amount": "Quantité minimum",
       "max-amount": "Quantité maximum"
     }

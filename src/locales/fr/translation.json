@@ -19,5 +19,6 @@
   },
   "close": "Fermer",
   "delete": "Supprimer",
-  "tools": "Liste d'outils"
+  "tools": "Liste d'outils",
+  "chance-help": "Valeur en %."
 }

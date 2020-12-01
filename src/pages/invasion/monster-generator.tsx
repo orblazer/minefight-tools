@@ -231,7 +231,7 @@ const Step1: React.FC<{ onSubmit: SubmitHandler<FormData>; onReset: () => void; 
           name="vehicle"
           id="vehicle"
           label={t('monster-generator.fields.vehicle')}
-          help={t('monster-generator.fields.vehicle-help')}
+          help={t('internal-name-help')}
           placeholder={t('monster-generator.fields.vehicle')}
         />
         <hr />

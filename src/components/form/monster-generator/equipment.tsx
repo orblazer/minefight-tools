@@ -89,6 +89,7 @@ const EquipmentItem = <TFieldValues extends FieldValues = FieldValues>({
         name={`${name}.dropChance`}
         id={`${name}.dropChance`}
         label={t('fields.equipment.drop-chance')}
+        help={t('chance-help', { ns: 'translation' })}
         min={0}
         max={100}
         step={0.01}

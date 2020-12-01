@@ -97,6 +97,7 @@ const Spell = <TFieldValues extends FieldValues = FieldValues>({
           step={0.01}
           label={t('monster-generator.fields.spell.chance')}
           placeholder={t('monster-generator.fields.spell.chance')}
+          help={t('chance-help', { ns: 'translation' })}
           rules={{
             min: min(0),
             max: max(100)

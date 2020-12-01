@@ -63,6 +63,7 @@ const MonsterItem = <TFieldValues extends FieldValues = FieldValues>({
           id={`${name}.type`}
           label={t('monster-generator.fields.spell.minion.monsters.type')}
           placeholder={t('monster-generator.fields.spell.minion.monsters.type')}
+          help={t('internal-name-help')}
           rules={{
             required: true,
             pattern: /^[a-z][a-z0-9_-]*$/
@@ -81,6 +82,7 @@ const MonsterItem = <TFieldValues extends FieldValues = FieldValues>({
           step={0.01}
           label={t('monster-generator.fields.spell.minion.monsters.chance')}
           placeholder={t('monster-generator.fields.spell.minion.monsters.chance')}
+          help={t('chance-help', { ns: 'translation' })}
           rules={{
             min: min(0),
             max: max(100)
