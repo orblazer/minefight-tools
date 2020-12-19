@@ -101,13 +101,11 @@ const AreaEffect: SpellSettings<AreaEffectData> = ({ control, name, defaultValue
           type="number"
           name={`${name}.durationOnUse`}
           id={`${name}.durationOnUse`}
-          min={0}
           step={1}
           label={t('monster-generator.fields.spell.area-effect.duration-on-use')}
           placeholder={t('monster-generator.fields.spell.area-effect.duration-on-use')}
           help={t('tick-help', { ns: 'minecraft' })}
           rules={{
-            min: min(0),
             validate: {
               integer
             }
@@ -137,13 +135,9 @@ const AreaEffect: SpellSettings<AreaEffectData> = ({ control, name, defaultValue
           type="number"
           name={`${name}.radiusOnUse`}
           id={`${name}.radiusOnUse`}
-          min={0}
           step={0.01}
           label={t('monster-generator.fields.spell.area-effect.radius-on-use')}
           placeholder={t('monster-generator.fields.spell.area-effect.radius-on-use')}
-          rules={{
-            min: min(0)
-          }}
           onChange={(e) => handleChange('radiusOnUse', e.target.value)}
         />
         <FormField
@@ -153,13 +147,9 @@ const AreaEffect: SpellSettings<AreaEffectData> = ({ control, name, defaultValue
           type="number"
           name={`${name}.radiusPerTick`}
           id={`${name}.radiusPerTick`}
-          min={0}
           step={0.01}
           label={t('monster-generator.fields.spell.area-effect.radius-per-tick')}
           placeholder={t('monster-generator.fields.spell.area-effect.radius-per-tick')}
-          rules={{
-            min: min(0)
-          }}
           onChange={(e) => handleChange('radiusPerTick', e.target.value)}
         />
         <MinecraftSelect

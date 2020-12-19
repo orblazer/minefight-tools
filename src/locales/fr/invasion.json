@@ -164,8 +164,8 @@
           "reapplication-delay": "Temps d'immunité entre 2 effets",
           "duration-on-use": "Diminution de la durée a chaque utilisation",
           "radius": "Rayon",
-          "radius-on-use": "Diminution du rayon a chaque utilisation",
-          "radius-per-tick": "Diminution du rayon a chaque tick",
+          "radius-on-use": "Changement du rayon a chaque utilisation",
+          "radius-per-tick": "Changement du rayon a chaque tick",
           "particle": "Particule",
           "color": "Couleur"
         },
